@@ -14,12 +14,48 @@
                 padding: 20px;
             }
             h1,
-            h2 {
+            h2,
+            h3,
+            h4 {
                 color: #2c3e50;
             }
             img {
                 max-width: 100%;
                 height: auto;
+            }
+            #flagship-smes {
+                padding: 2rem 0;
+            }
+            .sme-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 2rem;
+                margin-top: 2rem;
+            }
+            .sme-card {
+                background-color: #f8f9fa;
+                border-radius: 8px;
+                padding: 1.5rem;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+            .sme-card:hover {
+                transform: translateY(-5px);
+            }
+            .sme-card h3 {
+                color: #2c3e50;
+                margin-bottom: 0.5rem;
+            }
+            .sme-card h4 {
+                color: #3498db;
+                margin-bottom: 1rem;
+            }
+            .sme-card h5 {
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+            }
+            .sme-card ul {
+                padding-left: 1.5rem;
             }
         </style>
     </head>
@@ -307,47 +343,138 @@
 
             <section id="flagship-smes">
                 <h2>Flagship SMEs</h2>
-                <!-- Content will be added here -->
-            </section>
+                <p>
+                    The VR HEALTH CHAMPIONS project supports five innovative
+                    SMEs, each developing cutting-edge XR solutions for
+                    healthcare. Our goal is to help these companies achieve
+                    Technology Readiness Level (TRL) 9, with their products
+                    fully developed and proven in operational environments.
+                </p>
 
-            <section id="project-structure">
-                <h2>Project Structure</h2>
-                <!-- Content will be added here -->
-            </section>
+                <div class="sme-grid">
+                    <div class="sme-card">
+                        <h3>MedApp (Poland)</h3>
+                        <h4>CarnaLife Holo MedNav</h4>
+                        <p>
+                            A surgical navigation solution using Microsoft
+                            HoloLens 2 for 3D visualization of medical data.
+                        </p>
+                        <h5>Key Goals:</h5>
+                        <ul>
+                            <li>
+                                Develop a surgical-specific version of HoloLens
+                                2
+                            </li>
+                            <li>
+                                Enable active tracking of surgical instruments
+                            </li>
+                            <li>Integrate with various medical devices</li>
+                            <li>
+                                Secure public reimbursement in multiple European
+                                countries
+                            </li>
+                        </ul>
+                    </div>
 
-            <section id="consortium-partners">
-                <h2>Consortium Partners</h2>
-                <!-- Content will be added here -->
-            </section>
+                    <div class="sme-card">
+                        <h3>Lightspace Optical Reality (Latvia)</h3>
+                        <h4>Optical Reality AR Headset</h4>
+                        <p>
+                            A next-generation AR headset designed specifically
+                            for medical use cases.
+                        </p>
+                        <h5>Key Goals:</h5>
+                        <ul>
+                            <li>
+                                Advance the headset for AR image-assisted
+                                surgery
+                            </li>
+                            <li>
+                                Conduct human factor studies for safety analysis
+                            </li>
+                            <li>
+                                Increase market awareness and acceptance in the
+                                medical community
+                            </li>
+                        </ul>
+                    </div>
 
-            <section id="key-concepts">
-                <h2>Key Concepts and Approaches</h2>
-                <!-- Content will be added here -->
-            </section>
+                    <div class="sme-card">
+                        <h3>MEEVA (Italy)</h3>
+                        <h4>Zentastic VR Games</h4>
+                        <p>
+                            Therapeutic VR games for rehabilitation of teenagers
+                            with neurodevelopmental disorders.
+                        </p>
+                        <h5>Key Goals:</h5>
+                        <ul>
+                            <li>
+                                Enhance avatar realism through AI integration
+                            </li>
+                            <li>
+                                Improve user experience and expand content
+                                library
+                            </li>
+                            <li>Develop authoring tools for therapists</li>
+                            <li>
+                                Secure public reimbursement in Italy and other
+                                European countries
+                            </li>
+                        </ul>
+                    </div>
 
-            <section id="expected-impact">
-                <h2>Expected Impact</h2>
-                <!-- Content will be added here -->
-            </section>
+                    <div class="sme-card">
+                        <h3>Metaskills (Poland)</h3>
+                        <h4>VR Training Engine</h4>
+                        <p>
+                            A platform for soft skills development in healthcare
+                            professionals.
+                        </p>
+                        <h5>Key Goals:</h5>
+                        <ul>
+                            <li>
+                                Improve avatar realism and responsiveness using
+                                AI
+                            </li>
+                            <li>
+                                Expand content library and develop authoring
+                                tools
+                            </li>
+                            <li>
+                                Implement analytics dashboard for skill tracking
+                            </li>
+                            <li>Obtain Class I medical device certification</li>
+                        </ul>
+                    </div>
 
-            <section id="get-involved">
-                <h2>Get Involved</h2>
-                <!-- Content will be added here -->
-            </section>
+                    <div class="sme-card">
+                        <h3>Virtuleap (Portugal)</h3>
+                        <h4>Cogniclear VR</h4>
+                        <p>
+                            A VR-based cognitive assessment tool for detecting
+                            early signs of cognitive decline.
+                        </p>
+                        <h5>Key Goals:</h5>
+                        <ul>
+                            <li>Expand content for comprehensive assessment</li>
+                            <li>
+                                Conduct proof-of-concept studies in multiple
+                                European countries
+                            </li>
+                            <li>Secure public reimbursement pathways</li>
+                            <li>Obtain medical device certification</li>
+                        </ul>
+                    </div>
+                </div>
 
-            <section id="news-updates">
-                <h2>News and Updates</h2>
-                <!-- Content will be added here -->
-            </section>
-
-            <section id="resources">
-                <h2>Resources</h2>
-                <!-- Content will be added here -->
-            </section>
-
-            <section id="acknowledgments">
-                <h2>Acknowledgments</h2>
-                <!-- Content will be added here -->
+                <p>
+                    VR HEALTH CHAMPIONS provides these SMEs with essential
+                    support services, including data access, AI/ML enhancement,
+                    UI/UX design, regulatory guidance, market uptake strategies,
+                    and more. By addressing their unique challenges, we aim to
+                    accelerate their growth and foster a thriving XR healthcare
+                    ecosystem in Europe.
+                </p>
             </section>
         </main>
 
