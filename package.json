@@ -1,0 +1,17 @@
+{
+  "name": "vrhealthchamp",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "node src/build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "front-matter": "^4.0.2",
+    "marked": "^15.0.6"
+  }
+}

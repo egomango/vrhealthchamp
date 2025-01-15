@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--primary-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Flagship SMEs Section */
+#flagship-smes {
+    padding: 2rem 0;
+}
+
+.sme-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.sme-card {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.sme-card:hover {
+    transform: translateY(-5px);
+}
+
+.sme-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.sme-card h4 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.sme-card h5 {
+    color: var(--accent-color);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.sme-card ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Project Overview Section */
+#project-overview h3 {
+    margin-top: 1.5em;
+    color: var(--primary-color);
+}
+
+#project-overview h4 {
+    margin-top: 1em;
+    color: #34495e;
+}
+
+#project-overview ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+#project-overview li {
+    margin-bottom: 10px;
+}
+
+#project-overview li strong {
+    color: var(--primary-color);
+}
+
+/* Solution Section */
+#solution ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+#solution li {
+    margin-bottom: 10px;
+}
+
+#solution li strong {
+    color: var(--primary-color);
+}
+
+#solution h4 {
+    color: var(--primary-color);
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+#solution p {
+    margin-bottom: 1em;
+}
+
+/* WP7 Implementation Section */
+#wp7-implementation h3,
+#wp7-implementation h4,
+#wp7-implementation h5 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+#wp7-implementation ul {
+    padding-left: 20px;
+    margin-bottom: 1em;
+}
+
+#wp7-implementation li {
+    margin-bottom: 0.5em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .sme-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sme-card {
+        margin-bottom: 1rem;
+    }
+}

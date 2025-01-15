@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="{{language}}">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{{title}}</title>
+        <meta name="description" content="{{description}}" />
+        <meta name="keywords" content="{{keywords}}" />
+        <meta name="author" content="{{author}}" />
+        <meta name="organization" content="{{organization}}" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <!-- Additional heading styles -->
+        <style>
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            h3 {
+                font-size: 1.75rem;
+            }
+            h4 {
+                font-size: 1.5rem;
+            }
+            h5 {
+                font-size: 1.25rem;
+            }
+            h6 {
+                font-size: 1rem;
+            }
+
+            .sme-card {
+                margin: 2rem 0;
+                padding: 1.5rem;
+                background-color: var(--background-color);
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .sme-card h3,
+            .sme-card h4,
+            .sme-card h5,
+            .sme-card h6 {
+                color: var(--primary-color);
+                margin-bottom: 1rem;
+            }
+        </style>
+
+        <!-- Google tag -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-WY8Q4D4182"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-WY8Q4D4182");
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>{{title}}</h1>
+                <p class="description">{{description}}</p>
+                <p class="status">
+                    <strong>Status:</strong> {{project_status}}
+                </p>
+            </div>
+        </header>
+
+        <main class="container">{{content}}</main>
+
+        <footer>
+            <div class="container">
+                <p>{{copyright}}</p>
+                <div class="contact-info">
+                    <p>Contact: {{author}}</p>
+                    <p><a href="mailto:{{contact}}">{{contact}}</a></p>
+                    <p>{{organization}}</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
